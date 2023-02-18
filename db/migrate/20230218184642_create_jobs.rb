@@ -1,7 +1,7 @@
 class CreateJobs < ActiveRecord::Migration[6.1]
   def change
     create_table :jobs do |t|
-      t.varchar :name
+      t.string :name
       t.string :company
       t.string :company_logo
       t.datetime :start_date
