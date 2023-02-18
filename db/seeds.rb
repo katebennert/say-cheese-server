@@ -1,5 +1,77 @@
-puts "🌱 Seeding spices..."
+puts "🌱 Seeding jobs and freelancers..."
 
-# Seed your database here
+Freelancer.create([
+  {
+    name: 
+    email:
+    type:
+    image_url:
+    is_available:
+  },
+  {
+    name: 
+    email:
+    type:
+    image_url:
+    is_available:
+  },
+  {
+    name: 
+    email:
+    type:
+    image_url:
+    is_available:
+  },
+  {
+    name: 
+    email:
+    type:
+    image_url:
+    is_available:
+  },
+  {
+    name: 
+    email:
+    type:
+    image_url:
+    is_available:
+  }
+])
+
+Job.create([
+    {
+        name:
+        company:
+        company_logo:
+        start_date:
+        end_date:
+        description:
+        freelancers_needed:
+        is_full:
+        is_open:
+    },
+    {
+        name:
+        company:
+        company_logo:
+        start_date:
+        end_date:
+        description:
+        freelancers_needed:
+        is_full:
+        is_open:
+    },
+    {
+        name:
+        company:
+        company_logo:
+        start_date:
+        end_date:
+        description:
+        freelancers_needed:
+        is_full:
+        is_open:
+    }
+])
 
 puts "✅ Done seeding!"
