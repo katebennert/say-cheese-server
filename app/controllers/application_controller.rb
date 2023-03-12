@@ -53,7 +53,9 @@ class ApplicationController < Sinatra::Base
       start_date: params[:start_date],
       end_date: params[:end_date],
       description: params[:description],
-      freelancers_needed: params[:freelancers_needed]
+      freelancers_needed: params[:freelancers_needed],
+      is_full: params[:is_full],
+      is_open: params[:is_open]
     )
     job.to_json;
   end
