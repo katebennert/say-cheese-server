@@ -45,6 +45,19 @@ class ApplicationController < Sinatra::Base
     job.to_json(include: :freelancers)
   end
 
+  post '/jobs' do
+    job = Job.create(
+      name: params[:name],
+      company: params[:company],
+      company_logo: params[:company_logo],
+      start_date: params[:start_date],
+      end_date: params[:end_date],
+      description: params[:description],
+      freelancers_needed: params[:freelancers_needed]
+    )
+    job.to_json;
+  end
+
   delete '/jobs/:id' do
     job = Job.find(params[:id])
     job.destroy
