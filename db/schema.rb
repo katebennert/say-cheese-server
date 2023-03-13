@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2023_02_18_184642) do
   create_table "freelancers", force: :cascade do |t|
     t.string "name"
     t.string "email"
+    t.string "bio"
     t.string "freelancer_type"
     t.string "image_url"
     t.boolean "is_available"
