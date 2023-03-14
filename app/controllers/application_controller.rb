@@ -1,12 +1,6 @@
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
-  
-  get '/' do
-    "Hello World"
-  end
-  
-  # Add your routes here
   get '/jobs' do
     jobs = Job.all 
     jobs.to_json(include: :freelancers)
@@ -20,11 +14,6 @@ class ApplicationController < Sinatra::Base
   get '/freelancers' do
     freelancers = Freelancer.all
     freelancers.to_json
-  end
-
-  get '/freelancers/:id' do
-    freelancer = Freelancer.find(params[:id])
-    freelancer.to_json
   end
 
   patch '/freelancers/:id' do 
@@ -58,6 +47,18 @@ class ApplicationController < Sinatra::Base
       is_open: params[:is_open]
     )
     job.to_json;
+  end
+
+  post '/freelancers' do
+    freelancer = Freelancer.create(
+      name: params[:name],
+      email: params[:email],
+      bio: params[:bio],
+      freelancer_type: params[:freelancer_type],
+      image_url: params[:image_url],
+      is_available: params[:is_available]
+    )
+    freelancer.to_json;
   end
 
   delete '/jobs/:id' do
