@@ -1,3 +1,4 @@
 class Job < ActiveRecord::Base
-    has_many :freelancers
+    has_many :freelancers, dependent: :nullify
+
 end

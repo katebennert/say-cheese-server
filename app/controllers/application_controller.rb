@@ -1,9 +1,11 @@
+require 'pry'
+
 class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   get '/jobs' do
     jobs = Job.all 
-    jobs.to_json(include: :freelancers)
+    jobs.to_json
   end
 
   get '/jobs/:id' do
