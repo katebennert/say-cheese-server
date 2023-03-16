@@ -21,8 +21,12 @@ class ApplicationController < Sinatra::Base
   patch '/freelancers/:id' do 
     freelancer = Freelancer.find(params[:id])
     freelancer.update(
-      is_available: params[:is_available],
-      job_id: params[:job_id]
+      name: params[:name],
+      email: params[:email],
+      bio: params[:bio],
+      freelancer_type: params[:freelancer_type],
+      image_url: params[:image_url],
+      is_available: params[:is_available]
       )
     freelancer.to_json
   end
