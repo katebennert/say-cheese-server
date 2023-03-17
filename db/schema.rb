@@ -29,9 +29,7 @@ ActiveRecord::Schema.define(version: 2023_02_18_184642) do
     t.datetime "start_date"
     t.datetime "end_date"
     t.text "description"
-    t.integer "freelancers_needed"
-    t.boolean "is_full"
-    t.boolean "is_open"
+    t.integer "freelancers_required"
   end
 
 end

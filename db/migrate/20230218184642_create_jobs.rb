@@ -7,9 +7,7 @@ class CreateJobs < ActiveRecord::Migration[6.1]
       t.datetime :start_date
       t.datetime :end_date
       t.text :description
-      t.integer :freelancers_needed
-      t.boolean :is_full
-      t.boolean :is_open
+      t.integer :freelancers_required
     end
   end
 end

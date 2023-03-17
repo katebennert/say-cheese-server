@@ -26,8 +26,10 @@ class ApplicationController < Sinatra::Base
       bio: params[:bio],
       freelancer_type: params[:freelancer_type],
       image_url: params[:image_url],
-      is_available: params[:is_available]
+      is_available: params[:is_available],
+      job_id: params[:job_id]
       )
+      binding.pry
     freelancer.to_json
   end
 
@@ -35,8 +37,8 @@ class ApplicationController < Sinatra::Base
     job = Job.find(params[:id])
     job.update(
       is_full: params[:is_full],
-      freelancers_needed: params[:freelancers_needed]
-      )
+      freelancers_needed: params[:freelancers_needed],
+    )
     job.to_json(include: :freelancers)
   end
 
@@ -69,8 +71,10 @@ class ApplicationController < Sinatra::Base
 
   delete '/jobs/:id' do
     job = Job.find(params[:id])
+    job.freelancers.each do |f|
+      f.is_available = true
+    end
     job.destroy
-    job.to_json(include: :freelancers)
   end
   
 
