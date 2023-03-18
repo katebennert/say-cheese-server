@@ -59,9 +59,7 @@ Job.create([
       start_date: "2023-03-14 00:00:00",
       end_date: "2023-03-20 00:00:00",
       description: "Big Chicken Company is conducting our yearly shoot for our new menu items. We are looking for a photographer, producer and food stylist to create images and videos to use in out online promotinal materials.",
-      freelancers_needed: 4,
-      is_full: false,
-      is_open: true
+      freelancers_required: 4
     },
     {
       name: "TV Commercial for New Sandwich",
@@ -70,9 +68,7 @@ Job.create([
       start_date: "2023-03-14 00:00:00",
       end_date: "2023-03-15 00:00:00",
       description: "Brie everyone loves cheese strings. Cheesy feet cheese triangles who moved my cheese pepper jack pepper jack dolcelatte pepper jack cream cheese. Cheeseburger fromage frais fromage queso macaroni cheese cut the cheese cheeseburger melted cheese. Swiss.",
-      freelancers_needed: 2,
-      is_full: false,
-      is_open: true
+      freelancers_required: 2
     },
     {
       name: "Full Branding Package for our new CBD Chili Oil",
@@ -81,9 +77,7 @@ Job.create([
       start_date: "2023-03-14 00:00:00",
       end_date: "2023-03-21 00:00:00",
       description: "Brie everyone loves cheese strings. Cheesy feet cheese triangles who moved my cheese pepper jack pepper jack dolcelatte pepper jack cream cheese. Cheeseburger fromage frais fromage queso macaroni cheese cut the cheese cheeseburger melted cheese. Swiss.",
-      freelancers_needed: 10,
-      is_full: false,
-      is_open: true
+      freelancers_required: 10
     },
     {
       name: "Salad Ad Photoshoot",
@@ -92,9 +86,7 @@ Job.create([
       start_date: "2023-03-14 00:00:00",
       end_date: "2023-03-19 00:00:00",
       description: "Brie everyone loves cheese strings. Cheesy feet cheese triangles who moved my cheese pepper jack pepper jack dolcelatte pepper jack cream cheese. Cheeseburger fromage frais fromage queso macaroni cheese cut the cheese cheeseburger melted cheese. Swiss.",
-      freelancers_needed: 4,
-      is_full: false,
-      is_open: true
+      freelancers_required: 4
     },
     {
       name: "Web Design For New Cheese Concept",
@@ -103,9 +95,7 @@ Job.create([
       start_date: "2023-03-16 00:00:00",
       end_date: "2023-03-20 00:00:00",
       description: "Brie everyone loves cheese strings. Cheesy feet cheese triangles who moved my cheese pepper jack pepper jack dolcelatte pepper jack cream cheese. Cheeseburger fromage frais fromage queso macaroni cheese cut the cheese cheeseburger melted cheese. Swiss.",
-      freelancers_needed: 1,
-      is_full: false,
-      is_open: true
+      freelancers_required: 1
     },
     {
       name: "Videoshoot For New Soda Brand",
@@ -114,9 +104,7 @@ Job.create([
       start_date: "2023-03-14 00:00:00",
       end_date: "2023-03-21 00:00:00",
       description: "Brie everyone loves cheese strings. Cheesy feet cheese triangles who moved my cheese pepper jack pepper jack dolcelatte pepper jack cream cheese. Cheeseburger fromage frais fromage queso macaroni cheese cut the cheese cheeseburger melted cheese. Swiss.",
-      freelancers_needed: 4,
-      is_full: false,
-      is_open: true
+      freelancers_required: 4
     }
 ])
 
