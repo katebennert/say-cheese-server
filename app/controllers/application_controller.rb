@@ -60,7 +60,9 @@ class ApplicationController < Sinatra::Base
   delete '/jobs/:id' do
     job = Job.find(params[:id])
     job.freelancers.each do |f|
-      f.is_available = true
+      f.update(
+        is_available: true
+      )
     end
     job.destroy
     job.to_json
