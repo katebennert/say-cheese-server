@@ -57,6 +57,12 @@ class ApplicationController < Sinatra::Base
     freelancer.to_json
   end
 
+  delete '/freelancers/:id' do
+    freelancer = Freelancer.find(params[:id])
+    freelancer.destroy
+    freelancer.to_json
+  end
+
   delete '/jobs/:id' do
     job = Job.find(params[:id])
     job.freelancers.each do |f|
