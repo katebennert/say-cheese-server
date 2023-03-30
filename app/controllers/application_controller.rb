@@ -4,12 +4,12 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   get '/jobs' do
-    jobs = Job.all 
+    jobs = Job.sorted
     jobs.to_json(include: :freelancers)
   end
 
   get '/freelancers' do
-    freelancers = Freelancer.all
+    freelancers = Freelancer.sorted
     freelancers.to_json
   end
 

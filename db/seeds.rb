@@ -65,7 +65,7 @@ Job.create([
       name: "TV Commercial for New Sandwich",
       company: "Big Burgers",
       company_logo: "https://images.unsplash.com/photo-1549611016-3a70d82b5040?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1130&q=80",
-      start_date: "2023-03-14 00:00:00",
+      start_date: "2023-03-12 00:00:00",
       end_date: "2023-03-15 00:00:00",
       description: "Brie everyone loves cheese strings. Cheesy feet cheese triangles who moved my cheese pepper jack pepper jack dolcelatte pepper jack cream cheese. Cheeseburger fromage frais fromage queso macaroni cheese cut the cheese cheeseburger melted cheese. Swiss.",
       freelancers_required: 2
