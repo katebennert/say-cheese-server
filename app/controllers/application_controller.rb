@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
       description: params[:description],
       freelancers_required: params[:freelancers_required],
     )
-    job.to_json
+    job.to_json(include: :freelancers)
   end
 
   post '/freelancers' do
